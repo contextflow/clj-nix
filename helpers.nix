@@ -72,7 +72,8 @@ in
         jdkRunner = cfg.jdk;
         inherit (cfg) projectSrc name version main-ns buildCommand
           lockfile java-opts compileCljOpts javacOpts uberOpts
-          builder-extra-inputs builder-java-opts builder-preBuild builder-postBuild;
+          builder-extra-inputs builder-java-opts builder-preBuild builder-postBuild
+          aliases;
         enableLeiningen = cfg.withLeiningen;
       };
     in
